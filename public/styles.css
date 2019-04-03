@@ -1,0 +1,211 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background: #f2e1ab;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/* Header */
+.header {
+  display: flex;
+  padding: 20px 100px 0px 100px;
+  background-color: #f7863a;
+  color: #4c1402;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.title h3 {
+  font-style: italic;
+  color: #f2e1ab;
+}
+
+.title h1, .title h3 {
+  margin: 0px;
+}
+
+/* Footer */
+.footer {
+  height: 50px;
+  padding: 20px 100px 0px 100px;
+}
+
+.footer a {
+  color: #000;
+}
+
+hr {
+  border-color: #4c1402;
+}
+
+/* Content */
+.content {
+  padding: 20px 100px 0px 100px;
+}
+
+.image h2 {
+  font-size: 1em;
+}
+
+/* Admin */
+.heading {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.heading h2 {
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.add, .edit {
+  display: flex;
+}
+
+
+/* Form */
+input, textarea, select, button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+.form {
+  margin-right: 50px;
+}
+
+/* Uploaded images */
+.upload h2 {
+  margin: 0px;
+}
+
+.upload img {
+  max-width: 300px;
+}
+
+/* Suggestions */
+.suggestions {
+  width: 200px;
+  border: 1px solid #ccc;
+}
+
+.suggestion {
+  min-height: 20px;
+}
+
+.suggestion:hover {
+  background-color: #f7863a;
+  color: #4c1402;
+}
+
+/* Masonry */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.image-gallery {
+  column-gap: 1.5em;
+}
+
+.image {
+  margin: 0 0 1.5em;
+  display: inline-block;
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .image-gallery {
+    column-count: 4;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .image-gallery {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .image-gallery {
+    column-count: 2;
+  }
+}
+
+
+/* Login Form */
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2e1ab;
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 500px;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transition: all .3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal-header h1 {
+  margin-bottom: 30px;
+  font-size: 1.5em;
+}
+
+.modal-body {
+  margin: 0;
+}
+
+.modal-body input {
+  margin-bottom: 20px;
+  height: 30px;
+}
+
+.modal-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-default-button {
+  float: right;
+}
